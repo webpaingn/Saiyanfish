@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f58538;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.header__img {
+    height: 100%;
+    padding: 5px 0;
+    margin: 0 10px 0 0;
+    box-sizing: border-box;
+}
+.header__name {
+    font-family: "Permanent Marker";
+    font-size: 30px;
+    color: #f5ebdc;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+}
+.main__logo {
+    font-family: "Permanent Marker";
+    font-size: 100px;
+    color: #f5ebdc;
+}
+.ca__btn {
+    cursor: pointer;
+    padding: 5px 50px;
+    border-radius: 10px;
+    background-color: #502314;
+    border: none;
+}
+.ca__text {
+    font-family: "Permanent Marker";
+    font-size: 28px;
+    padding: 0 20px 0 0;
+    color: #f5ebdc;
+}
+.ca__copy {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    margin: 10px 0 0 0;
+}
+.ca__img {
+    width: 100px;
+    height: 100px;
+    background-color: #f5ebdc;
+    -webkit-mask: url("/img/icons/copy.svg") no-repeat center;
+    mask: url("/img/icons/copy.svg") no-repeat center;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    margin-right: 8px;
+}
+.ca__click {
+    font-family: "Permanent Marker";
+    font-size: 28px;
+    color: #f5ebdc;
+}
+.btn__actions {
+    display: flex;
+    margin: 20px 0 0 0;
+}
+.btn__link {
+    text-decoration: none;
+}
+.btn__buy {
+    padding: 8px 14px;
+    margin: 0 20px 0 0;
+    font-family: "Permanent Marker";
+    font-size: 24px;
+    cursor: pointer;
+    border: 2px solid #f58538;
+    border-radius: 10px;
+    color: #f5ebdc;
+    background-color: #502314;
+    transition: .2s all;
+}
+.btn__buy:hover {
+    border: 2px solid #502314;
+    background-color: inherit;
+}
+.btn__com {
+    padding: 8px 14px;
+    font-family: "Permanent Marker";
+    font-size: 24px;
+    cursor: pointer;
+    border: 2px solid #f58538;
+    border-radius: 10px;
+    color: #f5ebdc;
+    background-color: #502314;
+    transition: .2s all;
+}
+.btn__com:hover {
+    border: 2px solid #502314;
+    background-color: inherit;
+}
+@media (max-width: 1200px) {
+    .main__logo {
+        font-size: 80px;
+    }
+    .ca__btn {
+        padding: 5px 40px;
+    }
+    .ca__text {
+        font-size: 24px;
+    }
+}
+@media (max-width: 800px) {
+    .main__container {
+        width: 90%;
+    }
+    .ca__btn {
+        width: 100%;
+        padding: 5px 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .ca__text {
+        font-size: 22px;
+    }
+    .ca__img {
+        width: 80px;
+        height: 80px;
+    }
+    .ca__click {
+        font-size: 22px;
+    }
+    .btn__buy {
+        font-size: 20px;
+        margin: 0 5px 0 0;
+    }
+    .btn__com {
+        font-size: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .main__logo {
+        font-size: 60px;
+    }
+}
